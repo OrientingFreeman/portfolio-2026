@@ -4,80 +4,96 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>연형석 Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./script.js" defer></script>
 </head>
 <body>
-  <div class="page-shell">
-    <aside class="sidebar">
-      <a class="brand-mark" href="#top" aria-label="Portfolio Home">YHS</a>
-      <div class="sidebar-title">연형석 Portfolio</div>
-      <div class="sidebar-subtitle">Python Backend · RPA · OutSystems</div>
-      <nav class="toc" aria-label="Portfolio navigation">
-        <a href="#about">About</a>
-        <a href="#overview">Overview</a>
-        <a href="#rpa-projects">RPA</a>
-        <a href="#outsystems-projects">OutSystems</a>
-        <a href="#code-projects">Code-based</a>
-      </nav>
-    </aside>
+  <aside class="sidebar">
+    <a class="brand" href="#top"><span>YHS</span><strong>Portfolio</strong></a>
+    <nav class="toc" aria-label="Portfolio navigation">
+      <a href="#about">About</a>
+      <a href="#overview">Overview</a>
+      <a href="#rpa">RPA</a>
+      <a href="#outsystems">OutSystems</a>
+      <a href="#code">Code-based</a>
+    </nav>
+  </aside>
 
-    <main id="top" class="portfolio-body">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">Portfolio 2026</p>
-          <h1>반복되는 업무와 정보 문제를 시스템으로 해결하는 개발자</h1>
-          <p class="hero-lead">Python/Flask 기반 웹 서비스, Brity RPA 자동화, OutSystems Low-code 프로젝트, 법령 데이터 Retrieval 설계를 수행했습니다.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#overview">프로젝트 보기</a>
-            <a class="button" href="https://github.com/OrientingFreeman" target="_blank" rel="noopener">GitHub</a>
-          </div>
+  <main id="top" class="site-main">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Python Backend Developer · RPA Developer</p>
+        <h1>연형석</h1>
+        <p>반복되는 문제를 구조화하고, 웹 서비스 · 자동화 · Low-code 시스템으로 해결하는 개발자 포트폴리오입니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#rpa">프로젝트 보기</a>
+          <a class="button" href="https://github.com/OrientingFreeman" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-        <div class="hero-card">
-          <div class="profile-avatar">YHS</div>
-          <h2>연형석</h2>
-          <p>Python Backend Developer<br/>RPA Developer</p>
-          <div class="hero-tags"><span>Backend</span><span>Automation</span><span>Low-code</span><span>RAG</span></div>
-        </div>
-      </section>
+      </div>
+      <div class="hero-card"><img src="profile.jpg" alt="연형석 프로필 이미지" /></div>
+    </section>
 
-      <section id="about" class="content-section about-section">
-        <h1 id="about-me-why-development">About Me :Why Development?</h1>
+    <section id="about" class="panel markdown-body">
+      <h1 id="about-me-why-development">About Me :Why Development?</h1>
 <h3 id="문제를-반복하지-않기-위해-시스템을-만드는-사람">문제를 반복하지 않기 위해 시스템을 만드는 사람</h3>
 <p>방대한 정보를 반복적으로 찾고 정리하며 의사결정을 내리는 과정에 있어서, 단순히 주어진 기존의 도구에 의존한 노력을 반복하기 보다는 <strong>문제를 구조화하고 시스템으로 해결하는 방식</strong>을 찾아내는 것에 저에게 가장 재미있다고 느껴졌기 때문에 로스쿨을 졸업했음에도 개발자의 길을 걷게 되었습니다.</p>
 <p>이후 Python과 Flask를 활용한 웹 서비스 개발, Brity RPA를 이용한 업무 자동화, OutSystems 기반 애플리케이션 개발, 법령 QA Retrieval 시스템 설계 프로젝트를 수행하며 <strong>반복적인 문제를 기술로 해결하는 경험</strong>을 쌓았습니다.</p>
 <p>기술 자체보다도 <strong>기술이 해결하는 문제</strong>에 더 관심을 가지며, 사용자의 불편함과 업무의 비효율을 개선하는 개발자가 되고자 합니다.</p>
 <hr/>
 <hr/>
-      </section>
+    </section>
 
-      <section id="overview" class="content-section overview-section">
-        <div class="section-heading">
-          <p class="eyebrow">Project Overview</p>
-          <h2>3개 대분류 중심의 프로젝트 구성</h2>
-          <p>지원 포지션에서 보여주고 싶은 역량이 먼저 보이도록 RPA, OutSystems, Code-based 프로젝트로 재배치했습니다.</p>
-        </div>
-        <div class="overview-grid">
-          <a class="overview-card" href="#rpa-projects"><span>01</span><h3>RPA</h3><p>Brity RPA 기반 업무 자동화</p><strong>1 Project</strong></a>
-          <a class="overview-card" href="#outsystems-projects"><span>02</span><h3>OutSystems</h3><p>Low-code 기반 CRUD·업무 시스템</p><strong>1 Project</strong></a>
-          <a class="overview-card" href="#code-projects"><span>03</span><h3>Code-based</h3><p>Python·Flask·RAG 기반 구현</p><strong>2 Projects</strong></a>
-        </div>
-      </section>
+    <section id="overview" class="panel markdown-body">
+      <h1 id="project-overview">Project Overview</h1>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>핵심역량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salon De Nature</td>
+<td>Backend</td>
+</tr>
+<tr>
+<td>Brity RPA</td>
+<td>Automation</td>
+</tr>
+<tr>
+<td>LOL CRUD</td>
+<td>Low-code</td>
+</tr>
+<tr>
+<td>Law Retrieval</td>
+<td>Data Design</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<hr/>
+      <div class="category-grid">
+        <a href="#rpa"><strong>RPA</strong><span>Brity RPA 업무 자동화</span></a>
+        <a href="#outsystems"><strong>OutSystems</strong><span>Low-code CRUD · 업무 시스템</span></a>
+        <a href="#code"><strong>Code-based</strong><span>Flask · Python · RAG</span></a>
+      </div>
+    </section>
 
-      <section class="project-categories" aria-label="Project categories">
-        <details id="rpa-projects" class="project-category" open>
-          <summary><span class="summary-title">RPA Projects</span><span class="summary-desc">Brity RPA 기반 업무 자동화</span><span class="summary-count">1</span></summary>
-          <div class="category-body"><article id="project-02-brity-rpa-업무-자동화-프로젝트" class="project-card">
-  <div class="project-card-head">
-    <div>
-      <p class="eyebrow">RPA · 업무 자동화</p>
-      <h3>Brity RPA 업무 자동화</h3>
-      <p class="project-subtitle">반복 수집·정리 업무를 RPA로 자동화한 실무형 프로젝트</p>
-    </div>
-    <div class="badges"><span>Brity RPA</span><span>Excel</span><span>Web Scraping</span></div>
-  </div>
-  <div class="project-body">
-    <h1 id="project-02-brity-rpa-업무-자동화-프로젝트">Project 02. Brity RPA 업무 자동화 프로젝트</h1>
+    <section class="projects">
+      <details id="rpa" class="category" open>
+        <summary><span>01. RPA Projects</span><em>1 project</em></summary>
+        <div class="category-content">
+          <article class="project-card" id="brity-rpa">
+      <div class="project-card__head">
+        <div>
+          <p class="eyebrow">RPA</p>
+          <h3>Brity RPA 업무 자동화 프로젝트</h3>
+          <p class="project-subtitle">반복 업무를 분석하고 자동화하여 업무 효율을 향상시키는 Workflow 구현</p>
+        </div>
+        <div class="tag-row"><span>Brity RPA</span><span>Excel</span><span>Web Scraping</span><span>Automation</span></div>
+      </div>
+      <div class="project-body markdown-body"><h1 id="project-02-brity-rpa-업무-자동화-프로젝트">Project 02. Brity RPA 업무 자동화 프로젝트</h1>
 <h2 id="반복-업무를-분석하고-자동화하여-업무-효율을-향상시키는-workflow-구현">반복 업무를 분석하고 자동화하여 업무 효율을 향상시키는 Workflow 구현</h2>
 <blockquote>
 <p><strong>기간:</strong> 2026.05~2026.06 (개별 프로젝트당 1주)</p>
@@ -162,24 +178,43 @@ Excel 보고서 생성
 <p>처음에는 RPA를 단순히 클릭을 대신 수행하는 도구라고 생각했지만, 프로젝트를 진행하면서 <strong>업무를 작은 단위로 분석하고 이를 순서대로 연결하는 설계 능력이 자동화의 핵심</strong>이라는 것을 배웠습니다.</p>
 <p>특히 Workflow를 기능별로 분리하고 공통 요소를 재사용하는 방식으로 구현하면서 <strong>유지보수성과 확장성</strong>을 고려한 자동화 설계의 중요성을 이해할 수 있었습니다.</p>
 <hr/>
-<hr/>
-  </div>
-</article></div>
-        </details>
+<hr/></div>
+    </article>
+        </div>
+      </details>
 
-        <details id="outsystems-projects" class="project-category" open>
-          <summary><span class="summary-title">OutSystems Projects</span><span class="summary-desc">Low-code 기반 CRUD 및 업무 시스템</span><span class="summary-count">1</span></summary>
-          <div class="category-body"><article id="project-03-lol-챔피언-조회-및-개인-저장-시스템" class="project-card">
-  <div class="project-card-head">
+      <details id="outsystems" class="category" open>
+        <summary><span>02. OutSystems Projects</span><em>2 projects</em></summary>
+        <div class="category-content">
+          <article class="project-card compact" id="outsystems-safety">
+  <div class="project-card__head">
     <div>
-      <p class="eyebrow">OutSystems · Low-code</p>
-      <h3>LOL 챔피언 CRUD</h3>
-      <p class="project-subtitle">OutSystems 기반 조회·저장·CRUD 학습 프로젝트</p>
+      <p class="eyebrow">OutSystems</p>
+      <h3>안전진단 관리 시스템</h3>
+      <p class="project-subtitle">장비 · 건물 · 방 · 조직/회원 관리 중심의 Low-code 업무 시스템</p>
     </div>
-    <div class="badges"><span>OutSystems</span><span>CRUD</span><span>Aggregate</span></div>
+    <div class="tag-row"><span>OutSystems</span><span>Reactive Web</span><span>CRUD</span><span>Dashboard</span></div>
   </div>
-  <div class="project-body">
-    <h1 id="project-03-lol-챔피언-조회-및-개인-저장-시스템">Project 03. LOL 챔피언 조회 및 개인 저장 시스템</h1>
+  <div class="project-body markdown-body">
+    <h4>핵심 내용</h4>
+    <ul>
+      <li>Building, Room, Equipment 기준의 시설/장비 관리 화면 구현</li>
+      <li>Department, Team, User, Staff 기반 조직/사용자 관리 구조 설계</li>
+      <li>장비 대분류/중분류 연동, 검색, 필터, 페이지네이션 적용</li>
+      <li>관리자 대시보드, 건물별 장비 현황, 점검 완료율 등 업무 지표 UI 구현</li>
+    </ul>
+  </div>
+</article>
+          <article class="project-card" id="lol-crud">
+      <div class="project-card__head">
+        <div>
+          <p class="eyebrow">OutSystems</p>
+          <h3>LOL 챔피언 조회 및 개인 저장 시스템</h3>
+          <p class="project-subtitle">OutSystems 기반 CRUD 및 권한 관리 시스템</p>
+        </div>
+        <div class="tag-row"><span>OutSystems</span><span>Low-code</span><span>CRUD</span><span>Role</span></div>
+      </div>
+      <div class="project-body markdown-body"><h1 id="project-03-lol-챔피언-조회-및-개인-저장-시스템">Project 03. LOL 챔피언 조회 및 개인 저장 시스템</h1>
 <h2 id="outsystems-기반-crud-및-권한-관리-시스템">OutSystems 기반 CRUD 및 권한 관리 시스템</h2>
 <blockquote>
 <p><strong>기간:</strong> 2026.06. (1주)</p>
@@ -245,24 +280,24 @@ Excel 보고서 생성
 <p>이번 프로젝트를 통해 단순한 CRUD 구현을 넘어 <strong>Entity 간 관계 설계와 권한(Role) 기반 접근 제어</strong>를 경험할 수 있었습니다.</p>
 <p>특히 사용자와 챔피언 간의 관계를 데이터 모델로 표현하고, 권한에 따라 기능을 분리하면서 실제 서비스에서 필요한 기본적인 백엔드 설계가 OutSystems를 통해 어떻게 이루어질 수 있는 것인지 배울 수 있었습니다.</p>
 <hr/>
-<hr/>
-  </div>
-</article></div>
-        </details>
+<hr/></div>
+    </article>
+        </div>
+      </details>
 
-        <details id="code-projects" class="project-category" open>
-          <summary><span class="summary-title">Code-based Projects</span><span class="summary-desc">Python · Flask · AI · RAG</span><span class="summary-count">2</span></summary>
-          <div class="category-body"><article id="project-01-salon-de-nature" class="project-card">
-  <div class="project-card-head">
-    <div>
-      <p class="eyebrow">Code-based · 개인 프로젝트</p>
-      <h3>Salon De Nature</h3>
-      <p class="project-subtitle">실제 네일샵 운영 비효율을 해결하기 위한 예약 관리 시스템</p>
-    </div>
-    <div class="badges"><span>Python</span><span>Flask</span><span>AWS</span><span>OAuth</span></div>
-  </div>
-  <div class="project-body">
-    <h1 id="project-01-salon-de-nature">Project 01. Salon De Nature</h1>
+      <details id="code" class="category" open>
+        <summary><span>03. Code-based Projects</span><em>2 projects</em></summary>
+        <div class="category-content">
+          <article class="project-card" id="salon-de-nature">
+      <div class="project-card__head">
+        <div>
+          <p class="eyebrow">Code-based</p>
+          <h3>Salon De Nature</h3>
+          <p class="project-subtitle">실제 네일샵 운영의 비효율을 해결하기 위한 예약 관리 시스템</p>
+        </div>
+        <div class="tag-row"><span>Python</span><span>Flask</span><span>AWS EC2</span><span>OAuth</span></div>
+      </div>
+      <div class="project-body markdown-body"><h1 id="project-01-salon-de-nature">Project 01. Salon De Nature</h1>
 <h2 id="실제-네일샵-운영의-비효율을-해결하기-위한-예약-관리-시스템">실제 네일샵 운영의 비효율을 해결하기 위한 예약 관리 시스템</h2>
 <blockquote>
 <p><strong>기간:</strong> 2026.05~2026.07 (6주)</p>
@@ -409,19 +444,18 @@ DB 저장
 <h1 id="7-프로젝트를-통해-얻은-점">7. 프로젝트를 통해 얻은 점</h1>
 <p>이번 프로젝트를 통해 단순히 웹 애플리케이션을 구현하는 것을 넘어, <strong>실제 사용자의 요구사항을 분석하고 이를 시스템으로 구현하는 과정</strong>을 경험할 수 있었습니다. 권한 관리, 예약 검증, 데이터베이스 설계 등 다양한 비즈니스 로직을 직접 설계함으로써 사용자 중심의 요구사항을 반영하였고, 실제 운영 환경에서도 적용할 수 있는 시스템을 설계, 운영할 수 있게 되었습니다.</p>
 <hr/>
-<hr/>
-  </div>
-</article><article id="project-04-법령-qa-retrieval-시스템-설계" class="project-card">
-  <div class="project-card-head">
-    <div>
-      <p class="eyebrow">Code-based · Data Design</p>
-      <h3>법령 QA Retrieval / RAG</h3>
-      <p class="project-subtitle">법령 문서 구조를 반영한 검색·평가 설계 프로젝트</p>
-    </div>
-    <div class="badges"><span>RAG</span><span>Retrieval</span><span>Metadata</span></div>
-  </div>
-  <div class="project-body">
-    <h1 id="project-04-법령-qa-retrieval-시스템-설계">Project 04. 법령 QA Retrieval 시스템 설계</h1>
+<hr/></div>
+    </article>
+          <article class="project-card" id="law-rag">
+      <div class="project-card__head">
+        <div>
+          <p class="eyebrow">Code-based</p>
+          <h3>법령 QA Retrieval 시스템 설계</h3>
+          <p class="project-subtitle">법령 도메인을 고려한 Retrieval 시스템 설계 및 성능 평가</p>
+        </div>
+        <div class="tag-row"><span>Python</span><span>RAG</span><span>Retrieval</span><span>Data Design</span></div>
+      </div>
+      <div class="project-body markdown-body"><h1 id="project-04-법령-qa-retrieval-시스템-설계">Project 04. 법령 QA Retrieval 시스템 설계</h1>
 <h2 id="법령-도메인을-고려한-retrieval-시스템-설계-및-성능-평가">법령 도메인을 고려한 Retrieval 시스템 설계 및 성능 평가</h2>
 <blockquote>
 <p><strong>기간</strong> : 2026.04~2026.05 (6주)</p>
@@ -497,12 +531,11 @@ DB 저장
 <h1 id="github">GitHub</h1>
 <blockquote>
 <p>github.com/OrientingFreeman/law-rag-qa-planner</p>
-</blockquote>
-  </div>
-</article></div>
-        </details>
-      </section>
-    </main>
-  </div>
+</blockquote></div>
+    </article>
+        </div>
+      </details>
+    </section>
+  </main>
 </body>
 </html>
