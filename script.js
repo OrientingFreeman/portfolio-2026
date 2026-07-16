@@ -1,5 +1,17 @@
 (function () {
   const categories = Array.from(document.querySelectorAll('.project-category'));
+  const sidebarSections = Array.from(document.querySelectorAll('.sidebar-nav-section'));
+
+  function syncSidebar(categoryName) {
+    sidebarSections.forEach(function (section) {
+      const isTarget = section.dataset.sidebarCategory === categoryName;
+      const button = section.querySelector('.sidebar-category-toggle');
+      const submenu = section.querySelector('.sidebar-submenu');
+      section.classList.toggle('is-open', isTarget);
+      if (button) button.setAttribute('aria-expanded', isTarget ? 'true' : 'false');
+      if (submenu) submenu.hidden = !isTarget;
+    });
+  }
 
   function openCategory(categoryName, shouldScroll) {
     categories.forEach(function (category) {
@@ -9,6 +21,8 @@
       button.setAttribute('aria-expanded', isTarget ? 'true' : 'false');
       panel.hidden = !isTarget;
     });
+
+    syncSidebar(categoryName);
 
     if (shouldScroll) {
       const target = document.querySelector('[data-category="' + categoryName + '"]');
@@ -24,9 +38,9 @@
     });
   });
 
-  document.querySelectorAll('[data-open-category]').forEach(function (link) {
-    link.addEventListener('click', function () {
-      openCategory(link.dataset.openCategory, false);
+  document.querySelectorAll('[data-open-category]').forEach(function (control) {
+    control.addEventListener('click', function () {
+      openCategory(control.dataset.openCategory, false);
     });
   });
 
@@ -42,10 +56,20 @@
     if (panel) {
       const category = panel.closest('.project-category');
       openCategory(category.dataset.category, false);
+      document.querySelectorAll('.sidebar-submenu a').forEach(function (link) {
+        link.classList.toggle('is-active', link === anchor);
+      });
       requestAnimationFrame(function () {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
       event.preventDefault();
     }
   });
+
+  // Keep the sidebar category aligned with the initially open main accordion.
+  const initiallyOpen = categories.find(function (category) {
+    const panel = category.querySelector('.category-panel');
+    return panel && !panel.hidden;
+  });
+  if (initiallyOpen) syncSidebar(initiallyOpen.dataset.category);
 })();
