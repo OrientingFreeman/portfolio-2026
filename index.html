@@ -1,30 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>연형석 Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>연형석 Portfolio</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="brandmark">YHS</div>
-    <h2>Portfolio</h2>
-    <p>Python Backend Developer<br/>RPA Developer</p>
-    <nav><a href="#about-me-why-development">About Me :Why Development?</a>
-<a href="#project-overview-brity-rpa">Project Overview-Brity RPA</a>
-<a href="#brity-rpa-project-01-ai-이미지-분석-및-생성-자동화-시스템">RPA 01. AI 이미지 분석 및 생성 자동화 시스템</a>
-<a href="#brity-rpa-project-02-자동차-판매-실적-자동-수집-시스템">RPA 02. 자동차 판매 실적 자동 수집 시스템</a>
-<a href="#brity-rpa-project-03-srt-열차-정보-자동-조회-시스템">RPA 03. SRT 열차 정보 자동 조회 시스템</a>
-<a href="#brity-rpa-project-04-로또-당첨번호-통계-자동화-시스템">RPA 04. 로또 당첨번호 통계 자동화 시스템</a>
-<a href="#other-project-overview">Other Project Overview</a>
-<a href="#project-01-salon-de-nature">P01. Salon De Nature</a>
-<a href="#project-02-lol-챔피언-조회-및-개인-저장-시스템">P02. LOL 챔피언 조회 및 개인 저장 시스템</a>
-<a href="#project-03-법령-qa-retrieval-시스템-설계">P03. 법령 QA Retrieval 시스템 설계</a></nav>
-  </aside>
-  <main class="page">
-    <article class="markdown-body">
-      <script>
+<aside class="sidebar">
+<div class="brandmark">YHS</div>
+<h2>Portfolio</h2>
+<p>Python Backend Developer<br/>RPA Developer</p>
+<nav><a href="#about-me-why-development">About Me</a><a href="#featured-project">Featured · Salon De Nature</a><a href="#projects">Project Categories</a><a data-open-category="ai-projects" href="#project-03-법령-qa-retrieval-시스템-설계">AI · Law RAG</a><a data-open-category="web-applications" href="#brity-rpa-project-01-ai-이미지-분석-및-생성-자동화-시스템">Low-Code · Brity RPA</a><a data-open-category="web-applications" href="#project-01-salon-de-nature">Web · Salon De Nature</a><a data-open-category="web-applications" href="#project-02-lol-챔피언-조회-및-개인-저장-시스템">Web · LOL App</a><a href="#github">GitHub</a></nav>
+</aside>
+<main class="page">
+<article class="markdown-body">
+<script>
     mermaid.initialize({
       startOnLoad: true,
       theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
@@ -33,25 +25,17 @@
     });
   </script>
 <h1 id="portfolio">Portfolio</h1>
-
 <div class="profile-card">
-
-    <img src="그림2.jpg" alt="Profile" class="profile-image">
-
-    <div class="profile-info">
-
-        <h1>연형석</h1>
-
-        <p class="job">
+<img alt="Profile" class="profile-image" src="그림2.jpg"/>
+<div class="profile-info">
+<h1>연형석</h1>
+<p class="job">
             Python Backend Developer
         </p>
-
-        <p class="job">
+<p class="job">
             RPA Developer
         </p>
-
-    </div>
-
+</div>
 </div>
 <hr/>
 <h1 id="about-me-why-development">About Me :Why Development?</h1>
@@ -61,7 +45,118 @@
 <p>기술 자체보다도 <strong>기술이 해결하는 문제</strong>에 더 관심을 가지며, 사용자의 불편함과 업무의 비효율을 개선하는 개발자가 되고자 합니다.</p>
 <hr/>
 <hr/>
-<h1 id="project-overview-brity-rpa">Project Overview-Brity RPA</h1>
+
+<section class="featured-project" id="featured-project">
+<div class="featured-copy">
+<span class="featured-kicker">Featured Project · Web Application</span>
+<h2>Salon De Nature</h2>
+<p class="featured-subtitle">Production-ready Nail Salon Reservation &amp; CRM Platform</p>
+<p>고객 예약, 관리자 캘린더, CRM, 매출 분석, REST API와 AWS 운영 환경까지 구현한 실제 네일샵용 웹 애플리케이션입니다.</p>
+<div class="project-tags">
+<span>Flask</span><span>REST API</span><span>CRM</span><span>Analytics</span><span>AWS</span>
+</div>
+<div class="featured-actions">
+<a class="project-action primary" data-open-category="web-applications" href="#project-01-salon-de-nature">View Project</a>
+<a class="project-action" href="https://salondenature.shop" rel="noopener noreferrer" target="_blank">Live Service</a>
+</div>
+</div>
+<div aria-hidden="true" class="featured-visual">
+<div class="featured-monogram">SDN</div>
+<span>Reservation · CRM · API</span>
+</div>
+</section>
+<section class="project-hub" id="projects">
+<div class="section-heading">
+<span class="section-eyebrow">Selected Work</span>
+<h1>Projects</h1>
+<p>관심 분야를 선택하면 상세 프로젝트가 펼쳐집니다. 한 번에 하나의 카테고리만 열립니다.</p>
+</div>
+</section><div class="project-accordion" id="project-accordion">
+<section class="project-category" data-category="ai-projects">
+<button aria-controls="panel-ai-projects" aria-expanded="true" class="category-toggle" type="button">
+<span class="category-icon">AI</span>
+<span class="category-copy"><strong>AI Projects</strong><small>Retrieval, LLM workflow and domain knowledge systems</small></span>
+<span class="category-count">1 Project</span><span class="category-chevron">⌄</span>
+</button>
+<div class="category-panel" id="panel-ai-projects"><div class="category-intro"><a class="project-summary-card" href="#project-03-법령-qa-retrieval-시스템-설계"><span class="project-type">AI · RAG</span><strong>법령 QA Retrieval 시스템 설계</strong><p>법령 데이터 검색과 답변 생성 흐름을 구조화한 도메인 특화 RAG 설계 프로젝트</p><span class="summary-link">Explore project →</span></a></div><div class="details-divider">AI Project Details</div><h1 id="project-03-법령-qa-retrieval-시스템-설계">Project 03. 법령 QA Retrieval 시스템 설계</h1>
+<h2 id="법령-도메인을-고려한-retrieval-시스템-설계-및-성능-평가">법령 도메인을 고려한 Retrieval 시스템 설계 및 성능 평가</h2>
+<blockquote>
+<p><strong>기간</strong> : 2026.04~2026.05</p>
+<p><strong>인원</strong> : 개인 프로젝트</p>
+<p><strong>기술</strong></p>
+<p>Python</p>
+</blockquote>
+<hr/>
+<h1 id="프로젝트-개요-1">프로젝트 개요</h1>
+<p>LLM을 활용한 법률 질의응답 시스템에서는 잘못된 법령을 검색하거나 근거 없는 답변(Hallucination)이 생성되는 문제가 발생할 수 있습니다.</p>
+<p>본 프로젝트에서는 이러한 문제를 해결하기 위해 <strong>법령 문서의 구조를 반영한 Retrieval 시스템을 설계하고, 검색 성능을 평가하는 과정</strong>을 수행했습니다.</p>
+<p>단순히 RAG를 구현하는 것이 아니라 Retrieval 단계에서 발생하는 실패 원인을 분석하고 검색 품질을 개선하는 방향을 제안하는 것을 목표로 했습니다.</p>
+<hr/>
+<h1 id="문제-정의">문제 정의</h1>
+<p>기존 법령 QA 시스템에서는 다음과 같은 문제가 발생할 수 있습니다.</p>
+<ul>
+<li>잘못된 조문 검색</li>
+<li>개정 법령 미반영</li>
+<li>Hallucination 발생</li>
+<li>출처가 명확하지 않은 답변</li>
+<li>검색 실패(Failure Case)</li>
+</ul>
+<p>따라서 <strong>정확한 Retrieval이 전체 QA 시스템의 품질을 결정하는 핵심 요소</strong>라고 판단했습니다.</p>
+<hr/>
+<h1 id="해결-방법">해결 방법</h1>
+<p class="rag-diagrams"><img alt="RAG_Pipeline.drawio.svg" src="RAG_Pipeline.drawio.svg"/> <img alt="RAG_Architecture_Pipeline.drawio.svg" src="RAG_Architecture_Pipeline.drawio.svg"/></p>
+<p>본 프로젝트에서는 Retrieval 과정을 왼쪽과 같이 설계하였고, 향후 프로젝트를 전체 RAG과정을 구현하는 방향으로 확장할 경우 오른쪽과 같은 구조가 될 예정입니다.</p>
+<hr/>
+<h1 id="핵심-구현-1">핵심 구현</h1>
+<h2 id="metadata-schema-설계">Metadata Schema 설계</h2>
+<p>법령의 특성을 반영하기 위해 다음과 같은 Metadata를 설계했습니다.</p>
+<ul>
+<li>법령명</li>
+<li>조문 번호</li>
+<li>시행일</li>
+<li>개정일</li>
+<li>주제</li>
+<li>키워드</li>
+<li>신뢰도</li>
+</ul>
+<p>이를 통해 단순한 키워드 검색이 아니라 법령 정보를 구조적으로 관리할 수 있도록 설계했습니다.</p>
+<hr/>
+<h2 id="chunking-전략">Chunking 전략</h2>
+<p>일반 문서처럼 일정 길이로 분할하지 않고, <strong>법령의 의미 구조를 유지하기 위해 조문(Article) 단위로 Chunking</strong>을 수행했습니다.</p>
+<p>필요한 경우에는 항(Clause), 호(Item) 단위까지 확장 가능한 구조를 고려했습니다.</p>
+<hr/>
+<h2 id="retrieval-평가">Retrieval 평가</h2>
+<p>Retrieval 품질을 평가하기 위해 다음 지표를 설계했습니다.</p>
+<ul>
+<li>Hit@K</li>
+<li>Top-1 Accuracy</li>
+</ul>
+<p>특히 법령 QA에서는 **Top-K에 정답이 포함되는 것보다 첫 번째 검색 결과가 정확한지(Top-1 Accuracy)**가 실제 서비스 품질에 더 큰 영향을 준다고 판단하여 주요 평가 지표로 활용했습니다.</p>
+<hr/>
+<h2 id="failure-case-분석">Failure Case 분석</h2>
+<p>Keyword 기반 Retrieval은 동일한 키워드를 포함하는 여러 조문을 구분하지 못하는 문제가 있었습니다.</p>
+<p>예를 들어 **"손해배상"**이라는 질의는 민법 제390조와 제750조 모두 검색될 수 있었으며, 단순 Keyword Matching만으로는 사용자의 의도를 정확히 반영하기 어려웠습니다.</p>
+<p>이를 개선하기 위해</p>
+<ul>
+<li>Semantic Search</li>
+<li>Query Expansion</li>
+<li>Reranking</li>
+</ul>
+<p>등의 개선 방향을 제안했습니다.</p>
+<hr/>
+<h1 id="프로젝트를-통해-얻은-점-1">프로젝트를 통해 얻은 점</h1>
+<p>이번 프로젝트를 통해 <strong>LLM의 성능보다 Retrieval의 품질이 서비스의 정확도에 있어서 결정적인 요인임</strong>을 확인할 수 있었습니다.</p>
+<p>또한 단순히 기능을 구현하는 것보다 <strong>문제를 정의하고 평가 기준을 설계하며 개선 방향을 제시하는 과정이 시스템 설계에서 중요한 역할을 한다는 점</strong>을 배웠습니다.</p>
+<hr/>
+</div>
+</section>
+<section class="project-category" data-category="low-code-projects">
+<button aria-controls="panel-low-code-projects" aria-expanded="false" class="category-toggle" type="button">
+<span class="category-icon">LC</span>
+<span class="category-copy"><strong>Low-Code Projects</strong><small>RPA automation and low-code business workflows</small></span>
+<span class="category-count">4 Projects</span><span class="category-chevron">⌄</span>
+</button>
+<div class="category-panel" hidden="" id="panel-low-code-projects"><div class="category-intro project-summary-grid"><a class="project-summary-card" href="#brity-rpa-project-01-ai-이미지-분석-및-생성-자동화-시스템"><span class="project-type">Brity RPA · OpenAI</span><strong>AI 이미지 분석 및 생성 자동화</strong><p>요청 수집부터 이미지 생성·저장·메일 전송까지 자동화</p></a><a class="project-summary-card" href="#brity-rpa-project-02-자동차-판매-실적-자동-수집-시스템"><span class="project-type">Brity RPA · Web</span><strong>자동차 판매 실적 자동 수집</strong><p>웹 데이터 수집과 Excel 보고서 생성을 자동화</p></a><a class="project-summary-card" href="#brity-rpa-project-03-srt-열차-정보-자동-조회-시스템"><span class="project-type">Brity RPA · Web</span><strong>SRT 열차 정보 자동 조회</strong><p>왕복 열차·좌석·운임 정보 조회 자동화</p></a><a class="project-summary-card" href="#brity-rpa-project-04-로또-당첨번호-통계-자동화-시스템"><span class="project-type">Brity RPA · Excel</span><strong>로또 통계 자동화</strong><p>회차별 당첨번호 수집 및 통계 보고서 생성</p></a></div><div class="details-divider">Low-Code Project Details</div><h1 id="project-overview-brity-rpa">Project Overview-Brity RPA</h1>
 <table>
 <thead>
 <tr>
@@ -300,32 +395,15 @@
 <p>반복적인 데이터 수집을 넘어서 <strong>Excel 수식을 활용한 데이터 분석에 기초한 보고서 작성 자동화</strong>를 경험할 수 있었으며, Brity RPA가 <strong>데이터 분석과 보고서 생성 업무까지 자동화할 수 있는 도구로써</strong> 향후 자동화가 적용될 수 있는 영역이 상당히 방대할 것이라는 점을 깨닫게 해주었습니다.</p>
 <hr/>
 <hr/>
-<h1 id="other-project-overview">Other Project Overview</h1>
-<table>
-<thead>
-<tr>
-<th>Project</th>
-<th>핵심역량</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Salon De Nature</td>
-<td>Backend</td>
-</tr>
-<tr>
-<td>LOL CRUD</td>
-<td>Low-code</td>
-</tr>
-<tr>
-<td>Law Retrieval</td>
-<td>Data Design</td>
-</tr>
-</tbody>
-</table>
-<hr/>
-<hr/>
-<h1 id="project-01-salon-de-nature">Project 01. Salon De Nature</h1>
+</div>
+</section>
+<section class="project-category" data-category="web-applications">
+<button aria-controls="panel-web-applications" aria-expanded="false" class="category-toggle" type="button">
+<span class="category-icon">WEB</span>
+<span class="category-copy"><strong>Web Applications</strong><small>Deployed web services and backend applications</small></span>
+<span class="category-count">2 Projects</span><span class="category-chevron">⌄</span>
+</button>
+<div class="category-panel" hidden="" id="panel-web-applications"><div class="category-intro project-summary-grid"><a class="project-summary-card featured-card" href="#project-01-salon-de-nature"><span class="project-type">Featured · Flask</span><strong>Salon De Nature</strong><p>예약, CRM, Analytics, REST API를 포함한 운영형 네일샵 플랫폼</p></a><a class="project-summary-card" href="#project-02-lol-챔피언-조회-및-개인-저장-시스템"><span class="project-type">Flask · API</span><strong>LOL 챔피언 조회 및 개인 저장</strong><p>외부 API 조회와 개인화 데이터 저장을 결합한 웹 애플리케이션</p></a></div><div class="details-divider">Web Application Details</div><h1 id="project-01-salon-de-nature">Project 01. Salon De Nature</h1>
 <h2 id="실제-네일샵-운영의-비효율을-해결하기-위한-예약-관리-시스템">실제 네일샵 운영의 비효율을 해결하기 위한 예약 관리 시스템</h2>
 <blockquote>
 <p><strong>기간: 2026.05~2026.07</strong></p>
@@ -540,82 +618,15 @@ DB 저장
 <p>특히 사용자와 챔피언 간의 관계를 데이터 모델로 표현하고, 권한에 따라 기능을 분리하면서 실제 서비스에서 필요한 기본적인 백엔드 설계가 OutSystems를 통해 어떻게 이루어질 수 있는 것인지 배울 수 있었습니다.</p>
 <hr/>
 <hr/>
-<h1 id="project-03-법령-qa-retrieval-시스템-설계">Project 03. 법령 QA Retrieval 시스템 설계</h1>
-<h2 id="법령-도메인을-고려한-retrieval-시스템-설계-및-성능-평가">법령 도메인을 고려한 Retrieval 시스템 설계 및 성능 평가</h2>
-<blockquote>
-<p><strong>기간</strong> : 2026.04~2026.05</p>
-<p><strong>인원</strong> : 개인 프로젝트</p>
-<p><strong>기술</strong></p>
-<p>Python</p>
-</blockquote>
-<hr/>
-<h1 id="프로젝트-개요-1">프로젝트 개요</h1>
-<p>LLM을 활용한 법률 질의응답 시스템에서는 잘못된 법령을 검색하거나 근거 없는 답변(Hallucination)이 생성되는 문제가 발생할 수 있습니다.</p>
-<p>본 프로젝트에서는 이러한 문제를 해결하기 위해 <strong>법령 문서의 구조를 반영한 Retrieval 시스템을 설계하고, 검색 성능을 평가하는 과정</strong>을 수행했습니다.</p>
-<p>단순히 RAG를 구현하는 것이 아니라 Retrieval 단계에서 발생하는 실패 원인을 분석하고 검색 품질을 개선하는 방향을 제안하는 것을 목표로 했습니다.</p>
-<hr/>
-<h1 id="문제-정의">문제 정의</h1>
-<p>기존 법령 QA 시스템에서는 다음과 같은 문제가 발생할 수 있습니다.</p>
-<ul>
-<li>잘못된 조문 검색</li>
-<li>개정 법령 미반영</li>
-<li>Hallucination 발생</li>
-<li>출처가 명확하지 않은 답변</li>
-<li>검색 실패(Failure Case)</li>
-</ul>
-<p>따라서 <strong>정확한 Retrieval이 전체 QA 시스템의 품질을 결정하는 핵심 요소</strong>라고 판단했습니다.</p>
-<hr/>
-<h1 id="해결-방법">해결 방법</h1>
-<p class="rag-diagrams"><img alt="RAG_Pipeline.drawio.svg" src="RAG_Pipeline.drawio.svg"/> <img alt="RAG_Architecture_Pipeline.drawio.svg" src="RAG_Architecture_Pipeline.drawio.svg"/></p>
-<p>본 프로젝트에서는 Retrieval 과정을 왼쪽과 같이 설계하였고, 향후 프로젝트를 전체 RAG과정을 구현하는 방향으로 확장할 경우 오른쪽과 같은 구조가 될 예정입니다.</p>
-<hr/>
-<h1 id="핵심-구현-1">핵심 구현</h1>
-<h2 id="metadata-schema-설계">Metadata Schema 설계</h2>
-<p>법령의 특성을 반영하기 위해 다음과 같은 Metadata를 설계했습니다.</p>
-<ul>
-<li>법령명</li>
-<li>조문 번호</li>
-<li>시행일</li>
-<li>개정일</li>
-<li>주제</li>
-<li>키워드</li>
-<li>신뢰도</li>
-</ul>
-<p>이를 통해 단순한 키워드 검색이 아니라 법령 정보를 구조적으로 관리할 수 있도록 설계했습니다.</p>
-<hr/>
-<h2 id="chunking-전략">Chunking 전략</h2>
-<p>일반 문서처럼 일정 길이로 분할하지 않고, <strong>법령의 의미 구조를 유지하기 위해 조문(Article) 단위로 Chunking</strong>을 수행했습니다.</p>
-<p>필요한 경우에는 항(Clause), 호(Item) 단위까지 확장 가능한 구조를 고려했습니다.</p>
-<hr/>
-<h2 id="retrieval-평가">Retrieval 평가</h2>
-<p>Retrieval 품질을 평가하기 위해 다음 지표를 설계했습니다.</p>
-<ul>
-<li>Hit@K</li>
-<li>Top-1 Accuracy</li>
-</ul>
-<p>특히 법령 QA에서는 **Top-K에 정답이 포함되는 것보다 첫 번째 검색 결과가 정확한지(Top-1 Accuracy)**가 실제 서비스 품질에 더 큰 영향을 준다고 판단하여 주요 평가 지표로 활용했습니다.</p>
-<hr/>
-<h2 id="failure-case-분석">Failure Case 분석</h2>
-<p>Keyword 기반 Retrieval은 동일한 키워드를 포함하는 여러 조문을 구분하지 못하는 문제가 있었습니다.</p>
-<p>예를 들어 **"손해배상"**이라는 질의는 민법 제390조와 제750조 모두 검색될 수 있었으며, 단순 Keyword Matching만으로는 사용자의 의도를 정확히 반영하기 어려웠습니다.</p>
-<p>이를 개선하기 위해</p>
-<ul>
-<li>Semantic Search</li>
-<li>Query Expansion</li>
-<li>Reranking</li>
-</ul>
-<p>등의 개선 방향을 제안했습니다.</p>
-<hr/>
-<h1 id="프로젝트를-통해-얻은-점-1">프로젝트를 통해 얻은 점</h1>
-<p>이번 프로젝트를 통해 <strong>LLM의 성능보다 Retrieval의 품질이 서비스의 정확도에 있어서 결정적인 요인임</strong>을 확인할 수 있었습니다.</p>
-<p>또한 단순히 기능을 구현하는 것보다 <strong>문제를 정의하고 평가 기준을 설계하며 개선 방향을 제시하는 과정이 시스템 설계에서 중요한 역할을 한다는 점</strong>을 배웠습니다.</p>
-<hr/>
+</div>
+</section>
+</div>
 <h1 id="github">GitHub</h1>
 <blockquote>
 <p>github.com/OrientingFreeman/law-rag-qa-planner</p>
 </blockquote>
-    </article>
-  </main>
-  <script src="script.js"></script>
+</article>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
