@@ -23,4 +23,4 @@
 
 ## 확인 사항
 - Legal AI GitHub 저장소가 비공개라면 외부 방문자는 링크 내용을 볼 수 없습니다.
-- 공개 데모 주소가 확정되면 Featured Project와 상세 섹션에 Live Demo 버튼을 추가하는 것이 좋습니다.
+- Featured Project와 상세 섹션의 Live Demo 버튼을 법령 AI 공개 데모 주소에 연결했습니다.
