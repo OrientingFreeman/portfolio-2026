@@ -15,12 +15,12 @@
   - 법령 데이터 파이프라인
   - Hybrid Retrieval
   - 공식 판례 구조화 및 판례·법령 정합성 검사
-  - 판례 연결 조문 provenance 보강
-  - Grounding / Evidence Assignment
-  - Citation Validation
-  - Abstention
+  - 판례 연결 조문의 출처를 구분해 검색 결과에 보강
+  - 답변 문장별 근거 연결
+  - 인용 내용의 일치 여부 검증
+  - 근거 부족 시 답변 유보
   - 공식 법령 평가 49문항 및 판례 평가 20문항
-  - Failure Analysis / 158 Regression Tests
+  - 실패 유형 분석 / 158개 변경 후 반복 검증
   - FastAPI 기반 제품화
 - 기존 Web Application 및 RPA 프로젝트는 유지
 
