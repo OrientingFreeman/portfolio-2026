@@ -1,4 +1,4 @@
-# 범용 포트폴리오 v1
+# 범용 포트폴리오 v2 · OutSystems 지원형
 
 ## 적용 방법
 1. ZIP을 압축 해제합니다.
@@ -7,6 +7,11 @@
 4. GitHub Pages가 `main / root`를 바라보는지 확인합니다.
 
 ## 이번 수정
+- 상단에 `스마트 안전진단 시스템` OutSystems 대표 프로젝트 추가
+- Low-Code Projects를 5개로 변경하고 OutSystems 프로젝트를 첫 번째로 배치
+- 장비 및 직원 관리 화면 이미지 추가
+- 팀 프로젝트 전체 범위와 연형석 담당 범위를 명확히 구분
+- Entity 관계, Aggregate 조회, 삭제 제한 업무 규칙, Users–Staff 권한 연계를 중심으로 구현 내용 정리
 - 첫 대표 프로젝트를 `Evidence-Grounded Legal AI`로 변경
 - 직무 한정 표현을 줄이고 `AI Systems Portfolio`로 재정의
 - About Me를 법무·AI·Backend·RPA에 공통 적용 가능한 내용으로 개편
